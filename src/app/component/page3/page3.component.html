@@ -1,0 +1,28 @@
+<div id="page3">
+  <table>
+    <tr>
+      <th>Index</th>
+      <th>Player</th>
+      <th>NFL Team</th>
+      <th>Position</th>
+      <th>College</th>
+      <th>Home-Towm</th>
+    </tr>
+    <tr *ngFor="let player of playerList; let i = index; let o = odd; let e = even" [ngClass]="{ even: e, odd: o }">
+      <td> {{ i + 1 }} </td>
+      <td> {{ player.name }} </td>
+      <td> {{ player.Team }} </td>
+      <td> {{ player.position }} </td>
+      <td> {{ player.college }} </td>
+      <td> {{ player.hometowm }} </td>
+    </tr>
+  </table>
+  <div id="add">
+    <input class="form" [(ngModel)]="name" type="text" placeholder="PLayer Name">
+    <input class="form" [(ngModel)]="Team" type="text" placeholder="Team">
+    <input class="form" [(ngModel)]="position" type="text" placeholder="Position">
+    <input class="form" [(ngModel)]="college" type="text" placeholder="College ">
+    <input class="form" [(ngModel)]="hometowm" type="text" placeholder="Home-Towm">
+    <button (click)="addPlayer(name, Team, position, college, hometowm)">Add Player</button>
+  </div>
+</div>

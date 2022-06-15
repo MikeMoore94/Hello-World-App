@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(211, 88, 6);
+  font-weight: bolder;
+}
+h1 {
+  padding: 8px;
+  font-style: italic;
+  color: white;
+}
+nav {
+  background-color: rgb(249, 252, 252);
+  padding: 16px;
+}
+a {
+  background-color: rgb(251, 253, 253);
+}
+a:hover {
+  color: rgb(211, 88, 6);
+}
+span {
+  background-color: rgb(251, 253, 253);
+}
